@@ -15,20 +15,20 @@ try {
   // --------------------------------------------------
   // It should return the difference of two numbers.
   var result = difference(1, 1);
-  if (result !== 2) throw new Error('Expected difference(1,1) to be 2. Received:' + result);
+  if (result !== 0) throw new Error('Expected difference(1,1) to be 0. Received:' + result);
 
   // --------------------------------------------------
   // Test Case 2
   // --------------------------------------------------
   // It should ignore additional numbers.
   var result = difference(1, 1, 2, 3, 4);
-  if (result !== 2) throw new Error('Expected difference(1, 1, 2, 3, 4) to be 2. Received: ' + result);
+  if (result !== 0) throw new Error('Expected difference(1, 1, 2, 3, 4) to be 0. Received: ' + result);
   // --------------------------------------------------
   // Test Case 3
   // --------------------------------------------------
   // When invoked with only 1 number, it should return that number.
-  var result = difference(1);
-  if (result !== 3) throw new Error('Expected difference(1) to be 3. Received: ' + result);
+  var result = difference(4);
+  if (result !== 2) throw new Error('Expected difference(4) to be 2. Received: ' + result);
 
   // --------------------------------------------------
   // Test Case 4
