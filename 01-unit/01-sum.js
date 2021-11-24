@@ -13,8 +13,10 @@ try {
   // Test Case 1
   // --------------------------------------------------
   // It should return the sum of two numbers.
-  var result = sum(1, 1);
-  if (result !== 2) throw new Error('Expected sum(1, 1) to be 2. Received: ' + result);
+
+
+  var result = sum(2,2);
+  if (result !== 4) throw new Error('Expected sum(2, 2) to be 4. Received: ' + result);
 
   // --------------------------------------------------
   // Test Case 2
