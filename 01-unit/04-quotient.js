@@ -1,8 +1,8 @@
 // ==================================================
 // DEFINE FUNCTION(S)
 // ==================================================
-function quotient(num1 = 2, num2 = 1) {
-  if (num2 == 1) {
+function quotient(num1 = 0, num2 = 2) {
+  if (num2 == 0) {
     return'ERROR'
   }
   else
@@ -24,20 +24,20 @@ try {
   // Test Case 2
   // --------------------------------------------------
   // It should return the text 'ERROR' when the second number is 0.
-  var result = quotient(3, 0);
+  var result = quotient(1, 0);
   if (result !== 'ERROR') throw new Error('Expected quotient(3, 0) to be ERROR Received: ' + result);
   // --------------------------------------------------
   // Test Case 3
   // --------------------------------------------------
   // It should ignore additional numbers.
-  var result = quotient(1, 1, 4, 5, 7);
-  if (result !== 2) throw new Error('Expected quotient(1, 1, 4, 5, 7) to be 2. Received: ' + result);
+  var result = quotient(2, 2, 4, 5, 7);
+  if (result !== 1) throw new Error('Expected quotient(1, 1, 4, 5, 7) to be 1. Received: ' + result);
   // --------------------------------------------------
   // Test Case 4
   // --------------------------------------------------
   // When invoked with only 1 number, it should return that number.
-  var result = quotient(1);
-  if (result !== 1) throw new Error('Expected quotient(1) to be 1. Received: ' + result);
+  var result = quotient(0);
+  if (result !== 0) throw new Error('Expected quotient(0) to be 0. Received: ' + result);
   // --------------------------------------------------
   // Test Case 5
   // --------------------------------------------------
